@@ -1,0 +1,35 @@
+.sorting-area {
+  background: rgba(241, 253, 255, 0.342);
+  border-top: 1px solid rgba(3, 3, 3, 0.13);
+  border-bottom: 1px solid rgba(3, 3, 3, 0.13);
+  display: grid;
+  grid-template-columns: 30% 20% 20% 11% 19%;
+  font-size: 0.9rem;
+}
+
+.sorting-area-label,
+.sorting-area-label-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.sorting-area-label-btn:hover {
+  background: rgba(64, 255, 182, 0.685);
+  cursor: pointer;
+}
+
+.sorting-area-icon {
+  padding-bottom: 0.1rem;
+  font-size: 1.1rem;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+.sorting-area-icon-desc {
+  padding-top: 0.1rem;
+  font-size: 1.1rem;
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}

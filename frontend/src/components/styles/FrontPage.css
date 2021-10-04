@@ -1,0 +1,112 @@
+.front-page {
+  max-width: 100%;
+  min-width: 30vw;
+  min-height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgba(241, 253, 255, 0.596);
+  border-radius: 0.5rem;
+}
+
+.front-page-btns {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user-btn {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(145, 145, 145);
+  color: rgb(145, 145, 145);
+}
+
+.user-btn:hover {
+  border-color: rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
+}
+
+.user-btn-toggled {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
+}
+
+.front-page-user {
+  display: block;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.front-page-user label {
+  display: block;
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.front-page-user .input-error {
+  display: block;
+  margin: 0.2rem 0;
+  color: rgb(253, 94, 94);
+  font-size: 0.8rem;
+}
+
+.front-page-user input {
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.4rem 1rem;
+  border-style: none;
+  border-bottom: 2px solid rgb(145, 145, 145);
+  background: transparent;
+}
+
+.front-page-user input:focus {
+  background: transparent;
+  outline: none;
+  border-style: none;
+  border-bottom: 2px solid rgb(0, 153, 255);
+}
+
+.front-page-user .login-btn,
+.signup-btn {
+  display: block;
+  width: 100%;
+  margin: 1.5rem auto;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(0, 153, 255);
+  background: rgb(0, 153, 255);
+  color: rgb(238, 238, 238);
+  border-radius: 0.3rem;
+}
+
+.login-btn:active,
+.signup-btn:active {
+  background: rgb(0, 132, 219);
+  border-color: rgb(0, 132, 219);
+}
+
+.front-page::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.front-page::-webkit-scrollbar-track {
+  margin: 0.4rem 0;
+  background: rgba(255, 255, 255, 0);
+}
+
+.front-page::-webkit-scrollbar-thumb {
+  background: rgba(78, 78, 78, 0.363);
+  border-radius: 0.5rem;
+}

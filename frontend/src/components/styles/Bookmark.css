@@ -1,0 +1,171 @@
+.bookmark {
+  flex: 0.0001 0.0001 3rem;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 30% 20% 20% 11% 19%;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.13);
+  height: 3rem;
+}
+
+.bookmark a {
+  text-decoration: none;
+}
+
+.bookmark-title,
+.bookmark-category,
+.bookmark-date {
+  color: black;
+  align-self: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.bookmark-title:hover {
+  align-self: stretch;
+  padding-top: 0.85rem;
+  background: rgb(0, 153, 255);
+  color: white;
+}
+
+.bookmark-title:active {
+  background: rgb(0, 137, 228);
+}
+
+.bookmark-tags {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.bookmark .tag {
+  display: inline-block;
+  margin: 0.1rem;
+  padding: 0.2rem 0.2rem;
+  font-size: 0.7rem;
+  background: rgb(113, 147, 211);
+  border-radius: 0.2rem;
+}
+
+.bookmark-actions {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.bookmark-delete-btn,
+.bookmark-edit-btn,
+.bookmark-toggle-btn {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-style: none;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.bookmark-delete-btn:hover {
+  background: rgb(167, 78, 78);
+}
+
+.bookmark-edit-btn:hover {
+  background: rgb(255, 120, 29);
+}
+
+.bookmark-toggle-btn:hover {
+  background: rgb(0, 153, 255);
+}
+
+.bookmark-edit-btn {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-toggle-btn {
+  font-size: 1.2rem;
+}
+
+.bookmark-toggled {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  padding: 0 0.7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.13);
+}
+
+.bookmark-title-toggled {
+  text-decoration: none;
+  color: black;
+}
+
+.bookmark-title-toggled:hover {
+  color: rgb(0, 145, 212);
+}
+
+.bookmark-toggled .tag {
+  display: inline-block;
+  margin: 0 0.4rem;
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  background: rgb(113, 147, 211);
+  border-radius: 0.2rem;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: -1rem;
+  right: 1.55rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: rgb(73, 73, 73);
+}
+
+.toggle-icon:hover {
+  background: rgb(197, 197, 197);
+  color: rgb(0, 153, 255);
+}
+
+.toggle-icon:active {
+  background: rgba(241, 253, 255, 0.37);
+}
+
+.bookmark-toggled-delete-btn,
+.bookmark-toggled-edit-btn {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  border-style: none;
+  border-radius: 0.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+.bookmark-toggled-delete-btn {
+  background: rgb(167, 78, 78);
+}
+
+.bookmark-toggled-delete-btn:active {
+  background: rgb(139, 68, 68);
+}
+
+.bookmark-toggled-edit-btn {
+  background: rgb(255, 120, 29);
+  text-decoration: none;
+}
+
+.bookmark-toggled-edit-btn:active {
+  background: rgb(214, 100, 24);
+  text-decoration: none;
+}
