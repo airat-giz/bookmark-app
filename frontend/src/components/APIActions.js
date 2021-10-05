@@ -66,7 +66,7 @@ export async function getBookmark(id) {
     export async function userRegistration(data) {
         try {
             const response = await instance.post('register/', data);
-            return response.data;
+            return response;
         } catch (error) {
             return error.response;
         }

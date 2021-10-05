@@ -3,7 +3,7 @@ import {useFilterContext} from './contexts/FilterContext'
 
 
 const CategoryList = ({categories}) => {
-    const {filterExists, setFilters, toggleFilter, Group} = useFilterContext();
+    const {filterExists, toggleFilter, Group} = useFilterContext();
 
     return (
         <div className='category-area'>

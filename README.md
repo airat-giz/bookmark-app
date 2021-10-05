@@ -4,8 +4,8 @@ Bookmark application build on Django (Django REST Framework for API CRUD operati
 
 Requirements
 
-1. Python3
-2. Node.js
+1. Python 3.9.0
+2. Node.js v14.15.4
 
 Preparations
 

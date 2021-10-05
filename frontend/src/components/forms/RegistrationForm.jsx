@@ -4,7 +4,7 @@ import * as yup from 'yup';
 
 //form-components
 import CustomTextInput from '../form-components/CustomTextInput';
-import APIactions from '../APIActions';
+import {userRegistration} from '../APIActions';
 
 const passwordValidation = '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$'
 const initialValues = {
@@ -16,8 +16,6 @@ const initialValues = {
 }
 
 const RegistrationForm = () => {
-
-    const {userRegistration} = APIactions()
 
     return (
         <div>
@@ -46,7 +44,13 @@ const RegistrationForm = () => {
                              email: values.email,
                              password: values.password}
                const userData = await userRegistration(data)
-               console.log(userData)
+               if (userData.status === 400 && userData.statusText === 'Bad Request') {
+                   if (userData.data.email[0] === 'custom user with this email already exists.') {
+                    alert('User with this email already exist.')
+                   }
+               } else if (userData.status === 201 && userData.statusText === 'Created') {
+                    alert('Registration successful.')
+               }
           }}
           >
                   <Form>
